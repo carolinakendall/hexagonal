@@ -27,15 +27,15 @@ public class Operation {
         return new Operation(TypeOperationEnum.RETRAIT, montant);
     }
 
-    public LocalDateTime date() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public TypeOperationEnum type() {
+    public TypeOperationEnum getType() {
         return typeOperationEnum;
     }
 
-    public double montant() {
+    public double getMontant() {
         return montant;
     }
 

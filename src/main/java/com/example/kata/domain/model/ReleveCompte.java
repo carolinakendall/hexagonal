@@ -19,7 +19,7 @@ public class ReleveCompte {
         this.operations = operations;
     }
 
-    public TypeCompteEnum getTypeCompte() {
+    public TypeCompteEnum getEnumTypeCompte() {
         return typeCompteEnum;
     }
 

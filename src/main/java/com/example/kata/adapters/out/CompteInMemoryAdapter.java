@@ -23,7 +23,7 @@ public class CompteInMemoryAdapter implements CompteRepository {
     }
 
     @Override
-    public void save(CompteBancaire compte) {
+    public void saveOrUpdate(CompteBancaire compte) {
         stockage.put(compte.getNumeroCompte(), compte);
     }
 }

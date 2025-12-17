@@ -42,12 +42,12 @@ public class CompteController {
         return ReleveDto.mapReleveCompteToReleveDto(releve);
     }
 
-    @PostMapping("/creation/courant")
+    @PostMapping("/courant")
     public void creerCompteCourant(@RequestBody CreerCompteCourantDto creerCompteCourantDto) {
         compteTransaction.creerCompteCourant(creerCompteCourantDto);
     }
 
-    @PostMapping("/creation/livret")
+    @PostMapping("/livret")
     public void creerLivret(@RequestBody CreerLivretDto creerLivretDto) {
         compteTransaction.creerLivret(creerLivretDto);
     }

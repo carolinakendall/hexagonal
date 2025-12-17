@@ -10,10 +10,17 @@ public class CompteCourant extends CompteBancaire {
     private final boolean indicateurDecouvertAutorise;
 
 
-    public CompteCourant(String numeroCompte, double decouvertAutorise, boolean indicateurDecouvertAutorise) {
-        super(numeroCompte);
+    public CompteCourant(String numeroCompte, double solde, double decouvertAutorise, boolean indicateurDecouvertAutorise) {
+        super(numeroCompte, solde);
         this.decouvertAutorise = decouvertAutorise;
         this.indicateurDecouvertAutorise = indicateurDecouvertAutorise;
+    }
+
+    public double getDecouvertAutorise() {
+        return decouvertAutorise;
+    }
+    public boolean isIndicateurDecouvertAutorise() {
+        return indicateurDecouvertAutorise;
     }
 
     @Override

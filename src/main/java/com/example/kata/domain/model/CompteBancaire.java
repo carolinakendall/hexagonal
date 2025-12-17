@@ -12,8 +12,10 @@ public abstract class CompteBancaire {
     private double solde;
     private final List<Operation> operations = new ArrayList<>();
 
-    protected CompteBancaire(String numeroCompte) {
+    protected CompteBancaire(String numeroCompte, double solde) {
         this.numeroCompte = numeroCompte;
+        this.solde = solde;
+
     }
 
     public String getNumeroCompte() {

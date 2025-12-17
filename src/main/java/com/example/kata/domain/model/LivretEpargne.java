@@ -7,9 +7,13 @@ public class LivretEpargne extends CompteBancaire {
 
     private final double plafondDepot;
 
-    public LivretEpargne(String numeroCompte, double plafondDepot) {
-        super(numeroCompte);
+    public LivretEpargne(String numeroCompte, double decouvertAutorise, double plafondDepot) {
+        super(numeroCompte, decouvertAutorise);
         this.plafondDepot = plafondDepot;
+    }
+
+    public double getPlafond() {
+        return plafondDepot;
     }
 
     @Override

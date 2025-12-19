@@ -1,4 +1,4 @@
-This project was built as an exercise to practice Code quality, architecture choices and testing practices.
+This project was built as an exercise to practice code quality, architecture choices and testing practices.
 It is a bank account application implemented using Hexagonal Architecture (Ports & Adapters).
 
 *The application follows Hexagonal Architecture, organized into:
